@@ -8,7 +8,6 @@ node_modules/
 .ipynb_checkpoints
 *.tsbuildinfo
 khulnasoft_jupyter/labextension
-src/api/proto
 # Version file is handled by hatchling
 khulnasoft_jupyter/_version.py
 
@@ -120,10 +119,10 @@ dmypy.json
 
 # Yarn cache
 .yarn/
+.copilot_token
+notebooks
+notebooks/*
 
-Untitled*.ipynb
-.vscode
-
-# JupyterLite
-_output
-*.doit.db
+!khulnasoft_jupyter/dist
+.venv
+*.ipynb
