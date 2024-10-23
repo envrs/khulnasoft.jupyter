@@ -13,12 +13,6 @@
   <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/khulnasoft.jupyter/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
 </a>
 
-
-A GitHub Copilot extension for JupyterLab. This extension uses the language server provided by [copilot.vim](https://github.com/github/copilot.vim) and the [@jupyter/completer](https://jupyterlab.readthedocs.io/en/latest/user/completer.html) module to provide native GitHub Copilot autocomplete into notebooks.
-
-![https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/demo.gif](https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/demo.gif?raw=true)
-
-
 **⚠️ WARNING: You should not use this for remote notebooks over SSH as authentication for the extension server  is currently disabled. Also, This extension also only supports JupyterLab, Jupyter Notebook 7 but not the Classic Notebook (v6)**
 
 **This extension is still very new and may be rough around the edges. If you experience any bugs or have any feature requests please feel free to open an issue or make a PR :)**
