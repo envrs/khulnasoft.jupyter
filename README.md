@@ -1,4 +1,4 @@
-# khulnasoft_jupyter
+# khulnasoft.jupyter & copilot
 
 [PyPi Package](https://pypi.org/project/khulnasoft-jupyter/)
 
