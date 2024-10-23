@@ -1,5 +1,21 @@
 # khulnasoft.jupyter & copilot
 
+<a aria-label="Khulnasoft logo" href="https://khulnasoft.com">
+  <img alt="" src="https://img.shields.io/badge/Made%20by%20Khulnasoft-000000.svg?style=flat-square&logo=Khulnasoft&labelColor=000">
+</a>
+<a aria-label="NPM version" href="https://www.npmjs.com/package/khulnasoft_jupyter">
+  <img alt="" src="https://img.shields.io/npm/v/khulnasoft_jupyter.svg?style=flat-square&labelColor=000000">
+</a>
+<a aria-label="License" href="https://github.com/khulnasoft/khulnasoft.jupyter/blob/canary/LICENSE.md">
+  <img alt="" src="https://img.shields.io/npm/l/@khulnasoft/khulnasoft.jupyter.svg?style=flat-square&labelColor=000000">
+</a>
+<a aria-label="CI status" href="https://github.com/khulnasoft/khulnasoft.jupyter/actions/workflows/quality.yml?query=event%3Apush+branch%3Amain">
+  <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/khulnasoft.jupyter/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
+</a>
+
+
+
+
 [PyPi Package](https://pypi.org/project/khulnasoft-jupyter/)
 
 A GitHub Copilot extension for JupyterLab. This extension uses the language server provided by [copilot.vim](https://github.com/github/copilot.vim) and the [@jupyter/completer](https://jupyterlab.readthedocs.io/en/latest/user/completer.html) module to provide native GitHub Copilot autocomplete into notebooks.
