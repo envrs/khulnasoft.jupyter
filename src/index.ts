@@ -1,0 +1,69 @@
+import {
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
+} from '@jupyterlab/application';
+import { IEditorLanguageRegistry } from '@jupyterlab/codemirror';
+import { ICompletionProviderManager } from '@jupyterlab/completer';
+import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { KhulnasoftProvider, getAuthTokenUrl } from './provider';
+
+const plugin: JupyterFrontEndPlugin<void> = {
+  id: 'khulnasoft-jupyter:inline-provider',
+  autoStart: true,
+  requires: [
+    ICompletionProviderManager,
+    IEditorLanguageRegistry,
+    ISettingRegistry
+  ],
+  activate: (
+    app: JupyterFrontEnd,
+    manager: ICompletionProviderManager,
+    editorLanguageRegistry: IEditorLanguageRegistry,
+    settingRegistry: ISettingRegistry
+  ): void => {
+    const { commands } = app;
+
+    settingRegistry
+      .load(plugin.id)
+      .then(settings => {
+        const portalUrl = settings.get('portalUrl').composite as string;
+        const provider = new KhulnasoftProvider({
+          editorLanguageRegistry,
+          portalUrl,
+          appname: app.name,
+          version: app.version
+        });
+
+        commands.addCommand('@khulnasoft-jupyter:get-auth-token', {
+          label: 'Get Khulnasoft Authentication Token',
+          execute: () => {
+            window.open(
+              getAuthTokenUrl(settings.get('portalUrl').composite as string)
+            );
+          }
+        });
+
+        manager.registerInlineProvider(provider);
+        const authToken = settings.get('authToken').composite as string;
+        if (authToken !== '') {
+          provider.authToken = authToken; // This should reset the API key as well.
+        }
+
+        const updateKey = () => {
+          const portalUrl = settings.get('portalUrl').composite as string;
+          provider.portalUrl = portalUrl;
+          const authToken = settings.get('authToken').composite as string;
+          if (authToken !== '') {
+            provider.authToken = authToken; // This should reset the API key as well.
+          }
+        };
+
+        settings.changed.connect(() => updateKey());
+      })
+      .catch(reason => {
+        console.error(`Failed to load settings for ${plugin.id}`, reason);
+      });
+  }
+};
+
+export default plugin;
