@@ -13,6 +13,7 @@
   <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/style-guide/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
 </a>
 
+## Introduction
 
 **⚠️ WARNING: You should not use this for remote notebooks over SSH as authentication for the extension server  is currently disabled. Also, This extension also only supports JupyterLab, Jupyter Notebook 7 but not the Classic Notebook (v6)**
 
