@@ -9,8 +9,8 @@
 <a aria-label="License" href="https://github.com/khulnasoft/style-guide/blob/canary/LICENSE.md">
   <img alt="" src="https://img.shields.io/npm/l/khulnasoft_jupyter.svg?style=flat-square&labelColor=000000">
 </a>
-<a aria-label="CI status" href="https://github.com/khulnasoft/style-guide/actions/workflows/quality.yml?query=event%3Apush+branch%3Amain">
-  <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/style-guide/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
+<a aria-label="CI status" href="https://github.com/khulnasoft/style-guide/actions/workflows/build.yml?query=event%3Apush+branch%3Amain">
+  <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/style-guide/build.yml?event=push&branch=main&style=flat-square&labelColor=000000">
 </a>
 
 ## Introduction
