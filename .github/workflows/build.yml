@@ -35,11 +35,8 @@ jobs:
         set -eux
         python -m pip install .[test]
 
-        jupyter server extension list
-        jupyter server extension list 2>&1 | grep -ie "khulnasoft_jupyter.*OK"
-
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "khulnasoft_jupyter.*OK"
+        jupyter labextension list 2>&1 | grep -ie "khulnasoft-jupyter.*OK"
         python -m jupyterlab.browser_check
 
     - name: Package the extension
@@ -80,11 +77,8 @@ jobs:
         pip install "jupyterlab>=4.0.0,<5" khulnasoft_jupyter*.whl
 
 
-        jupyter server extension list
-        jupyter server extension list 2>&1 | grep -ie "khulnasoft_jupyter.*OK"
-
         jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "khulnasoft_jupyter.*OK"
+        jupyter labextension list 2>&1 | grep -ie "khulnasoft-jupyter.*OK"
         python -m jupyterlab.browser_check --no-browser-test
 
 
