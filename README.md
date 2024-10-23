@@ -41,8 +41,8 @@ pip install khulnasoft_jupyter
 
 To login to copilot open the command palette with `Ctrl+Shift+C` (`Cmd+Shift+C` on mac) then select the `Sign In With Github` command and follow the instructions.
 
-![https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/login.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/login.png?raw=true)
-![https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/auth.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/auth.png?raw=true)
+![https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/login.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/login.png?raw=true)
+![https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/auth.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/auth.png?raw=true)
 
 Once signed in open any notebook and the extension should run!
 
@@ -134,7 +134,7 @@ folder is located. Then you can remove the symlink named `khulnasoft_jupyter` wi
 
 ### Layout and structure
 
-![https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/diagram.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/656c425c9956eb1563a3f90990e0b270ebff725f/imgs/diagram.png?raw=true)
+![https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/diagram.png](https://github.com/khulnasoft/khulnasoft.jupyter/blob/main/imgs/diagram.png?raw=true)
 
 This extension is composed of a Python package named `khulnasoft_jupyter`
 for the server extension and a NPM package named `khulnasoft_jupyter`
