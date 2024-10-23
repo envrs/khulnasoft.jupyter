@@ -3,11 +3,11 @@
 <a aria-label="Khulnasoft logo" href="https://khulnasoft.com">
   <img alt="" src="https://img.shields.io/badge/Made%20by%20Khulnasoft-000000.svg?style=flat-square&logo=Khulnasoft&labelColor=000">
 </a>
-<a aria-label="NPM version" href="https://www.npmjs.com/package/@khulnasoft/style-guide">
-  <img alt="" src="https://img.shields.io/npm/v/@khulnasoft/style-guide.svg?style=flat-square&labelColor=000000">
+<a aria-label="NPM version" href="https://www.npmjs.com/package/khulnasoft_jupyter">
+  <img alt="" src="https://img.shields.io/npm/v/khulnasoft_jupyter.svg?style=flat-square&labelColor=000000">
 </a>
 <a aria-label="License" href="https://github.com/khulnasoft/style-guide/blob/canary/LICENSE.md">
-  <img alt="" src="https://img.shields.io/npm/l/@khulnasoft/style-guide.svg?style=flat-square&labelColor=000000">
+  <img alt="" src="https://img.shields.io/npm/l/khulnasoft_jupyter.svg?style=flat-square&labelColor=000000">
 </a>
 <a aria-label="CI status" href="https://github.com/khulnasoft/style-guide/actions/workflows/quality.yml?query=event%3Apush+branch%3Amain">
   <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/style-guide/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
