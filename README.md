@@ -1,19 +1,5 @@
 # khulnasoft.jupyter & copilot
 
-<a aria-label="Khulnasoft logo" href="https://khulnasoft.com">
-  <img alt="" src="https://img.shields.io/badge/Made%20by%20Khulnasoft-000000.svg?style=flat-square&logo=Khulnasoft&labelColor=000">
-</a>
-<a aria-label="NPM version" href="https://www.npmjs.com/package/khulnasoft_jupyter">
-  <img alt="" src="https://img.shields.io/npm/v/khulnasoft_jupyter.svg?style=flat-square&labelColor=000000">
-</a>
-<a aria-label="License" href="https://github.com/khulnasoft/khulnasoft.jupyter/blob/canary/LICENSE.md">
-  <img alt="" src="https://img.shields.io/npm/l/@khulnasoft/khulnasoft.jupyter.svg?style=flat-square&labelColor=000000">
-</a>
-<a aria-label="CI status" href="https://github.com/khulnasoft/khulnasoft.jupyter/actions/workflows/quality.yml?query=event%3Apush+branch%3Amain">
-  <img alt="" src="https://img.shields.io/github/actions/workflow/status/khulnasoft/khulnasoft.jupyter/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
-</a>
-
-<br>
 **⚠️ WARNING: You should not use this for remote notebooks over SSH as authentication for the extension server  is currently disabled. Also, This extension also only supports JupyterLab, Jupyter Notebook 7 but not the Classic Notebook (v6)**
 
 **This extension is still very new and may be rough around the edges. If you experience any bugs or have any feature requests please feel free to open an issue or make a PR :)**
