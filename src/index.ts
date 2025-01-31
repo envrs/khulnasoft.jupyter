@@ -73,6 +73,13 @@ class CopilotInlineProvider implements IInlineCompletionProvider {
 
   constructor(notebookClients: Map<string, NotebookLSPClient>) {
     this.notebookClients = notebookClients;
+    this.initializeWebSocket();
+  }
+
+  private initializeWebSocket() {
+    this.notebookClients.forEach(client => {
+      client.initializeWebSocket();
+    });
   }
 
   async fetch(
